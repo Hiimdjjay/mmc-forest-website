@@ -1,0 +1,21 @@
+.section__heading {
+	display: block;
+	margin-bottom: 1em;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.section__heading {
+		font-size: 3.2rem;
+		margin-bottom: 1.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.section__heading {
+		font-size: 3.8rem;
+	}
+}

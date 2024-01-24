@@ -1,0 +1,65 @@
+@use './utils/colors' as *;
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 60vh;
+	text-align: left;
+	padding: 5.2em 2em 2em 2em;
+	color: $pure-white;
+	background-image: $hero-img-shadow, url(../img/jungle-small.jpg);
+	background-size: cover;
+	background-position: center;
+
+	&__box {
+		&-title {
+			font-family: 'Raleway', sans-serif;
+			font-size: 2.4rem;
+		}
+
+		&-text {
+			font-size: 1.4rem;
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		background-image: $hero-img-shadow, url(../img/jungle-big.jpg);
+		align-items: start;
+		height: 55vh;
+		text-align: left;
+		padding: 5.2em 3.5em 3.5em 3.5em;
+		background-position: center;
+		&__box {
+			&-title {
+				font-size: 3rem;
+			}
+
+			&-text {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		height: 55vh;
+		background-position: center 65%;
+
+		&__box {
+			&-title {
+				font-size: 4rem;
+			}
+
+			&-text {
+				font-size: 2.2rem;
+			}
+		}
+	}
+}
